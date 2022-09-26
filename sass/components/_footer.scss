@@ -1,0 +1,166 @@
+.footer {
+  background-color: var(--footer-bcg-cl);
+  padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-group {
+  margin-right: 70px;
+}
+
+// CONTACTS
+.contacts {
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__list {
+    @extend %list;
+  }
+}
+
+.contacts__link {
+  @extend %link;
+
+  color: var(--light-cl);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+
+  &--transparent {
+    color: var(--footer-link-cl);
+  }
+}
+
+// JOIN
+.join {
+  margin-right: auto;
+
+  &__item {
+    @extend %list;
+  }
+
+  &__title {
+    display: flex;
+    color: var(--light-cl);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__icon {
+    fill: var(--light-cl);
+  }
+}
+
+.join__link {
+  @extend %flex;
+  width: 44px;
+  height: 44px;
+  background-color: var(--icon-footer-elipce-cl);
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hover-cl);
+  }
+}
+
+// SUBSCRIBE
+.subscribe__title {
+  display: flex;
+  color: var(--light-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+
+  &__field {
+    display: flex;
+    margin-right: 12px;
+  }
+}
+
+.subscribe-form__input {
+  height: 50px;
+  width: 358px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: var(--box-shadow-button);
+  border-radius: var(--border-radius-button);
+  /* outline: transparent; */
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--light-cl);
+
+  transition: border-color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-cl);
+  }
+
+  &::placeholder {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.03em;
+    color: var(--footer-link-cl);
+  }
+}
+
+.subscribe-form {
+  &__btn {
+    @extend %button;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 28px;
+    padding-right: 28px;
+
+    width: 200px;
+    height: 50px;
+
+    border-style: none;
+  }
+
+  &__btn-icon {
+    fill: var(--light-cl);
+  }
+  &__btn-name {
+    margin-right: auto;
+    color: var(--light-cl);
+  }
+}

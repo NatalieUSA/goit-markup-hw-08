@@ -1,0 +1,53 @@
+:root {
+    /* Fonts */
+    --main-fonts: Roboto, sans-serif;
+    --secondary-font: Raleway, sans-serif;
+  
+
+    --accent-cl: #2196f3;
+    --light-cl: #ffffff;
+
+    /* Text colors */
+    --main-txt-cl: #757575;
+    --title-txt-cl: #212121;
+    --logo-cl: #000000;
+    
+    --modal-btn-border-cl: rgba(0, 0, 0, 0.1);
+    --footer-link-cl: rgba(255, 255, 255, 0.6);
+  
+    /* Background colors */
+    --secondary-bcg-cl: #f5f4fa;
+    --footer-bcg-cl: #2f303a;
+    --hero-bcg-cl: #c4c4c4;
+    
+    --btn-hover-cl: #188ce8;
+    --hero-overlay-cl: rgba(47, 48, 58, 0.4);
+    --modal-icon-cl: #000000;
+  
+    --header-border-cl: #ececec;
+    --card-border: #eeeeee;
+    --border-radius-button: 4px;
+    --border-radius-cards: 0px 0px 4px 4px;
+    --box-shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --box-shadow-active: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --box-shadow-cards: 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  
+    --box-shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  
+    --hover-overlay-cl: rgba(33, 150, 243, 0.9);
+  
+    --icon-cl: #afb1b8;
+    --icon-footer-elipce-cl: rgba(255, 255, 255, 0.1);
+  
+    --form-input-border-cl: rgba(33, 33, 33, 0.2):
+    /*  */
+    --items: 3;
+    --indent: 30px;
+  
+    /* АНИМАЦИЯ */
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration: 250ms;
+  }
