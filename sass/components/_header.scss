@@ -9,8 +9,15 @@
 
 .main-nav {
   display: flex;
+  width: 100%;
+ justify-content:space-between;
   margin-right: auto;
-  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  // align-items: center;
+  // align-items: baseline;
 }
 
 .site-nav {
@@ -19,17 +26,19 @@
   display: flex;
   gap: 50px;
   padding: 0;
-  margin: 0;
+  // margin: 0;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
 }
 
 .site-nav__link {
   @extend %link;
 
+ 
   padding: 32px 0;
+ 
   position: relative;
   display: block;
   color: var(--title-txt-cl);
@@ -44,37 +53,56 @@
   &:focus {
     color: var(--accent-cl);
   }
+
+  @media screen and (min-width: 1200px) 
+  { }
 }
 
 .auth-nav {
   @extend %list;
-  display: flex;
-  gap: 50px;
-  padding: 0;
-  margin: 0;
 
-  @media screen and (max-width: 767px) {
-    display: none;
+
+
+  @media screen and (max-width: 1199px) {
+    padding: 21px 0;
+    margin: 0;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
   }
+
+
+  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //     display: block;
+  //   }
 
   &__link {
     @extend %link;
 
-    padding: 32px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    @media screen and (min-width: 768px) {
+      color: var(--main-txt-cl);
+      text-decoration: none;
+      font-size: 12px;
+      line-height: calc(14 / 12);
+      letter-spacing: 0.02em;
+    }
 
-    color: var(--main-txt-cl);
-    text-decoration: none;
-    font-size: 14px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      padding: 32px 0;
+    }
     font-weight: 500;
+    font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+
+   
 
     transition: color var(--duration) var(--timing-function);
   }
@@ -95,7 +123,7 @@
   }
 }
 
-/* LINE */
+// /* LINE */
 .site-nav__link {
   text-align: center;
   justify-content: center;

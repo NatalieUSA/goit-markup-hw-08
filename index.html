@@ -35,11 +35,11 @@
     <!--HEADER - Шапка сайта-->
     <header class="header">
       <div class="header-container container">
-        <nav class="main-nav">
+       
           <a class="logo header__logo" href="./index.html" lang="en"
             >Web<span class="logo--dark-theme">Studio</span></a
           >
-
+          <nav class="main-nav">
           <ul class="site-nav">
             <li class="site-nav__item">
               <a
@@ -53,7 +53,7 @@
             </li>
             <li><a class="site-nav__link" href="#">Контакти</a></li>
           </ul>
-        </nav>
+        
         <ul class="auth-nav">
           <li>
             <a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -72,6 +72,8 @@
             >
           </li>
         </ul>
+      </nav>
+
 
         <button
           class="btn-menu js-open-menu"
@@ -163,39 +165,96 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="competition__list">
             <li class="competition__item">
-              <img
-                class="img"
-                src="./images/1p-work/img11.jpg"
-                alt="За комп'ютером працює людина"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Desktop screen   -->
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/1p-work/competition-1_d-@1x.webp 1x,
+                   ./images/1p-work/competition-1_d-@2x.webp 2x
+                 "
+                 type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/1p-work/competition-1_d-@1x.jpg 1x,
+                   ./images/1p-work/competition-1_d-@2x.jpg 2x
+                 "
+                 type="image/jpg"
+               />
 
+               <img
+                 class="img"
+                 src="./images/1p-work/competition-1_d-@1x.jpg"
+                 alt="За комп'ютером працює людина"
+                 loading="lazy"
+               />
+             </picture> 
+             
               <p class="competition__overlay">Десктопні додатки</p>
             </li>
 
             <li class="competition__item">
-              <img
-                class="img"
-                src="./images/1p-work/img21.jpg"
-                alt="За ноутбуком працює людина та в руці тримає мобільний телефон. 
-              На моніторі ноутбука схематично зображені три мобільні телефони"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Desktop screen   -->
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/1p-work/competition-2_d-@1x.webp 1x,
+                   ./images/1p-work/competition-2_d-@2x.webp 2x
+                 "
+                 type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/1p-work/competition-2_d-@1x.jpg 1x,
+                   ./images/1p-work/competition-2_d-@2x.jpg 2x
+                 "
+                 type="image/jpg"
+               />
 
+               <img
+                 class="img"
+                 src="./images/1p-work/competition-2_d-@1x.jpg"
+                 alt="За ноутбуком працює людина та в руці тримає мобільний телефон. 
+                 На моніторі ноутбука схематично зображені три мобільні телефони"
+                 loading="lazy"
+               />
+             </picture> 
+            
               <p class="competition__overlay">Мобільні додатки</p>
             </li>
 
             <li class="competition__item">
-              <img
-                class="img"
-                src="./images/1p-work/img31.jpg"
-                alt="В руках людина тримає планшет з зображенням градієнту кольорів"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <!-- Desktop screen   -->
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/1p-work/competition-3_d-@1x.webp 1x,
+                   ./images/1p-work/competition-3_d-@2x.webp 2x
+                 "
+                 type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/1p-work/competition-3_d-@1x.jpg 1x,
+                   ./images/1p-work/competition-3_d-@2x.jpg 2x
+                 "
+                 type="image/jpg"
+               />
 
+               <img
+                 class="img"
+                 src="./images/1p-work/competition-3_d-@1x.jpg"
+                 alt="В руках людина тримає планшет з зображенням градієнту кольорів"
+                 loading="lazy"
+               />
+             </picture> 
+        
               <p class="competition__overlay">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -909,7 +968,7 @@
               <textarea
                 class="register-form__massage"
                 name="comment"
-                rows="5"
+                rows="4"
                 placeholder="Введіть текст"
               ></textarea>
             </label>
@@ -957,19 +1016,19 @@
       </button>
 
       <ul class="mobile-nav">
-        <li><a href="" class="link">Студія</a></li>
-        <li><a href="" class="link">Портфоліо</a></li>
-        <li><a href="" class="link">Контакти</a></li>
+        <li><a href="" class="mobile-nav__link">Студія</a></li>
+        <li><a href="" class="mobile-nav__link">Портфоліо</a></li>
+        <li><a href="" class="mobile-nav__link">Контакти</a></li>
       </ul>
       <ul class="mobile-auth">
-        <li><a href="" class="link">+38 096 111 11 11</a></li>
-        <li><a href="" class="link">info@devstudio.com</a></li>
+        <li><a href="" class="mobile-auth__link mobile-auth__link-phone">+38 096 111 11 11</a></li>
+        <li><a href="" class="mobile-auth__link mobile-auth__link-mail">info@devstudio.com</a></li>
       </ul>
       <ul class="mobile-socials">
-        <li><a href="" class="mobile-socials__link">Instagram</a></li>
-        <li><a href="" class="mobile-socials__link">Twitter</a></li>
-        <li><a href="" class="mobile-socials__link">Facebook</a></li>
-        <li><a href="" class="mobile-socials__link">LinkedIn</a></li>
+        <li><a href="" class="mobile-socials__link">Instagram </a></li>
+        <li><a href="" class="mobile-socials__link">Twitter </a></li>
+        <li><a href="" class="mobile-socials__link">Facebook </a></li>
+        <li><a href="" class="mobile-socials__link">LinkedIn </a></li>
       </ul>
     </div>
 

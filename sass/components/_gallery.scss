@@ -1,4 +1,9 @@
-.gallery {
+.portfolio {
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
 }
 
 .gallery__list {

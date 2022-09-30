@@ -10,15 +10,12 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 25px;
-    
   }
-    
-
 }
 
 .filtr__btn {
-  margin-bottom: 15px;
-  
+  @media screen and (max-width: 767px) {margin-bottom: 15px;}
+
   color: var(--title-txt-cl);
   background-color: var(--secondary-bcg-cl);
   font-family: inherit;
@@ -40,7 +37,7 @@
   &--current-btn {
     background-color: var(--btn-hover-cl);
     box-shadow: var(--box-shadow-active);
-    color: var( --light-cl);
+    color: var(--light-cl);
   }
 
   &:hover,
