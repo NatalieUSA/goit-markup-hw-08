@@ -1,5 +1,15 @@
 .competition {
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
+
   padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   &__list {
     display: flex;
@@ -8,7 +18,7 @@
 
   &__item {
     @extend %list;
-    
+
     position: relative;
     width: 370px;
     height: 294px;
@@ -16,7 +26,7 @@
     margin-right: auto;
     overflow: hidden;
   }
-  
+
   &__overlay {
     position: absolute;
     bottom: 0;

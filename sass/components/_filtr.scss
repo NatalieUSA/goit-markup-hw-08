@@ -5,9 +5,20 @@
   gap: 8px;
   margin-bottom: 50px;
   justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    
+  }
+    
+
 }
 
 .filtr__btn {
+  margin-bottom: 15px;
+  
   color: var(--title-txt-cl);
   background-color: var(--secondary-bcg-cl);
   font-family: inherit;

@@ -1,9 +1,17 @@
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .box {
+//     background-image: url('photo@2x.png');
+//   }
+
 .hero {
   text-align: center;
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0;
   margin: 0 auto;
+  height: 400px;
+  max-width: 1600px;
+ 
 
   background-color: var(--hero-bcg-cl);
   background-image: linear-gradient(
@@ -11,27 +19,67 @@
       var(--hero-overlay-cl),
       var(--hero-overlay-cl)
     ),
-    url(../images/hero/Img.jpg);
+    url(../images/hero/img_sm-@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/img_sm-@2x.jpg);
+  }
+  // tablet
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/hero/img_md-@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/img_md-@2x.jpg);
+  }
+  }
+
+  // desctop 
+    @media screen and (min-width: 769px) {
+      height: 400px;
+      padding: 118px 0;
+      background-image: url(../images/hero/img_lg-@1x.jpg);
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/img_lg-@2x.jpg);
+    }
+    }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+    padding: 200px 0;
+  }
+
   &__slogan {
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
 
     color: var(--light-cl);
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
   }
 
   &__button {
     @extend %button;
-    
+
     padding: 10px 32px;
     color: var(--light-cl);
     font-family: inherit;

@@ -1,24 +1,39 @@
 .features {
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
+
   &__list {
     @extend %list;
 
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
   &__item {
-    width: calc((100% - 90px) / 4);
-    // flex-basis: calc((100% -3 * 30px) / 4);
-  }
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
 
-  &__item:nth-child(4n) {
-    margin-right: 0;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
   }
 
   &__rectangle {
     @extend %flex;
-    
-    width: 270px;
+
     height: 120px;
     background-color: var(--secondary-bcg-cl);
     margin-bottom: 30px;

@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <!-- Modern normalize -->
-   
+
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -39,6 +39,7 @@
           <a class="logo header__logo" href="./index.html" lang="en"
             >Web<span class="logo--dark-theme">Studio</span></a
           >
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a
@@ -48,9 +49,7 @@
               </a>
             </li>
             <li>
-              <a class="site-nav__link" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li><a class="site-nav__link" href="#">Контакти</a></li>
           </ul>
@@ -73,6 +72,17 @@
             >
           </li>
         </ul>
+
+        <button
+          class="btn-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#menuopen"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -134,7 +144,7 @@
             <li class="features__item">
               <div class="features__rectangle">
                 <svg class="" width="70" height="70">
-                  <use href="./images/icons.svg#icon-antenna"></use>
+                  <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
               <h3 class="features__subtitle">Сучасні технології</h3>
@@ -198,13 +208,67 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="img"
-                src="./images/1p-comanda/squosh/igor.jpg"
-                alt="фотографія Ігора"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- !-- Desktop screen LG -->               
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/igor/team_lg-@1x.webp 1x,
+                    ./images/1p-comanda/igor/team_lg-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/igor/team_lg-@1x.jpg 1x,
+                    ./images/1p-comanda/igor/team_lg-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen MD -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/1p-comanda/igor/team_md-@1x.webp 1x,
+                  ./images/1p-comanda/igor/team_md-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/1p-comanda/igor/team_md-@1x.jpg 1x,
+                    ./images/1p-comanda/igor/team_md-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen SM-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/igor/team_sm-@1x.webp 1x,
+                    ./images/1p-comanda/igor/team_sm-@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/igor/team_sm-@1x.jpg  1x,
+                    ./images/1p-comanda/igor/team_sm-@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/1p-comanda/igor/team_sm-@1x.jpg"
+                  alt="фотографія Ігора"
+        
+                  loading="lazy"
+                />
+              </picture>
               <div class="team__text">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__position" lang="en">Product Designer</p>
@@ -262,13 +326,68 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="img"
-                src="./images/1p-comanda/squosh/olga.jpg"
-                alt="фотографія Ольги"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- !-- Desktop screen LG --> 
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/olga/team_lg-@1x-1.webp 1x,
+                    ./images/1p-comanda/olga/team_lg-@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/olga/team_lg-@1x-1.jpg 1x,
+                    ./images/1p-comanda/olga/team_lg-@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen MD -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/1p-comanda/olga/team_md-@1x-1.webp 1x,
+                  ./images/1p-comanda/olga/team_md-@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/1p-comanda/olga/team_md-@1x-1.jpg 1x,
+                    ./images/1p-comanda/olga/team_md-@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen SM-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/olga/team_sm-@1x-1.webp 1x,
+                    ./images/1p-comanda/olga/team_sm-@2x-1.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/olga/team_sm-@1x-1.jpg  1x,
+                    ./images/1p-comanda/olga/team_sm-@2x-1.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/1p-comanda/olga/team_sm-@1x-1.jpg"
+                  alt="фотографія Ольги"
+        
+                  loading="lazy"
+                />
+              </picture>
+              
               <div class="team__text">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
@@ -326,13 +445,68 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="img"
-                src="./images/1p-comanda/squosh/mykola.jpg"
-                alt="фотографія Миколи"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <!-- !-- Desktop screen LG -->              
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/mykola/team_lg-@1x-2.webp 1x,
+                    ./images/1p-comanda/mykola/team_lg-@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/mykola/team_lg-@1x-2.jpg 1x,
+                    ./images/1p-comanda/mykola/team_lg-@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen MD -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/1p-comanda/mykola/team_md-@1x-2.webp 1x,
+                  ./images/1p-comanda/mykola/team_md-@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/1p-comanda/mykola/team_md-@1x-2.jpg 1x,
+                    ./images/1p-comanda/mykola/team_md-@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen SM-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/mykola/team_sm-@1x-2.webp 1x,
+                    ./images/1p-comanda/mykola/team_sm-@2x-2.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/mykola/team_sm-@1x-2.jpg  1x,
+                    ./images/1p-comanda/mykola/team_sm-@2x-2.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/1p-comanda/mykola/team_sm-@1x-2.jpg"
+                  alt="фотографія Миколи"
+        
+                  loading="lazy"
+                />
+              </picture>
+            
               <div class="team__text">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__position" lang="en">Marketing</p>
@@ -390,13 +564,68 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="img"
-                src="./images/1p-comanda/squosh/mykhailo.jpg"
-                alt="фотографія Михайла"
-                width="270"
-                height="260"
-              />
+              <picture>
+                 <!-- Desktop screen LG  -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/myhailo/team_lg-@1x-3.webp 1x,
+                    ./images/1p-comanda/myhailo/team_lg-@2x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/1p-comanda/myhailo/team_lg-@1x-3.jpg 1x,
+                    ./images/1p-comanda/myhailo/team_lg-@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen MD -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/1p-comanda/myhailo/team_md-@1x-3.webp 1x,
+                  ./images/1p-comanda/myhailo/team_md-@2x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/1p-comanda/myhailo/team_md-@1x-3.jpg 1x,
+                    ./images/1p-comanda/myhailo/team_md-@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen SM-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/myhailo/team_sm-@1x-3.webp 1x,
+                    ./images/1p-comanda/myhailo/team_sm-@2x-3.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/1p-comanda/myhailo/team_sm-@1x-3.jpg  1x,
+                    ./images/1p-comanda/myhailo/team_sm-@2x-3.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="team__img img"
+                  src="./images/1p-comanda/myhailo/team_sm-@1x-3.jpg"
+                  alt="фотографія Михайла"
+        
+                  loading="lazy"
+                />
+              </picture>
+           
               <div class="team__text">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__position" lang="en">UI Designer</p>
@@ -469,55 +698,35 @@
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href="#"
-                aria-label="Логотип компанії"
-              >
+              <a class="clients__link" href="#" aria-label="Логотип компанії">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo2"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href="#"
-                aria-label="Логотип компанії"
-              >
+              <a class="clients__link" href="#" aria-label="Логотип компанії">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo3"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href="#"
-                aria-label="Логотип компанії"
-              >
+              <a class="clients__link" href="#" aria-label="Логотип компанії">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo4"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__item">
-              <a
-                class="clients__link"
-                href="#"
-                aria-label="Логотип компанії"
-              >
+              <a class="clients__link" href="#" aria-label="Логотип компанії">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo5"></use>
                 </svg>
               </a>
             </li>
             <li class="clients__tem">
-              <a
-                class="clients__link"
-                href="#"
-                aria-label="Логотип компанії"
-              >
+              <a class="clients__link" href="#" aria-label="Логотип компанії">
                 <svg class="clients__icon" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo6"></use>
                 </svg>
@@ -529,7 +738,7 @@
     </main>
 
     <!--FOOTER-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-group">
           <a href="/" class="logo footer__logo" lang="en"
@@ -645,7 +854,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -713,7 +922,10 @@
               name="checkbox"
             />
             <svg class="register-form__icons" width="16" height="15">
-              <use class="register-form__icons--checked" href="./images/icons.svg#check"></use>
+              <use
+                class="register-form__icons--checked"
+                href="./images/icons.svg#check"
+              ></use>
               <use
                 class="register-form__icons--unchecked"
                 href="./images/icons.svg#uncheck"
@@ -734,5 +946,40 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menuclose"></use>
+          >
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li><a href="" class="link">Студія</a></li>
+        <li><a href="" class="link">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+      <ul class="mobile-auth">
+        <li><a href="" class="link">+38 096 111 11 11</a></li>
+        <li><a href="" class="link">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-socials">
+        <li><a href="" class="mobile-socials__link">Instagram</a></li>
+        <li><a href="" class="mobile-socials__link">Twitter</a></li>
+        <li><a href="" class="mobile-socials__link">Facebook</a></li>
+        <li><a href="" class="mobile-socials__link">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <!-- mobile menu skript -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

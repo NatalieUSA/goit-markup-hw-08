@@ -1,12 +1,22 @@
 .clients {
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
+
+  // margin: -15px;
+
   &__list {
     @extend %list;
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
 }
+
+
 
 .clients__icon {
   color: currentColor;
@@ -26,8 +36,14 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
+
+  // width: calc((100% - 2 * 30px) / 2);
+  // margin: 15px;
+  
+ 
+  
   background-color: var(--light-cl);
   border: 1px solid var(--icon-cl);
   border-radius: var(--border-radius-button);
@@ -38,5 +54,14 @@
   &:hover,
   &:focus {
     border-color: var(--btn-hover-cl);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+   
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  
   }
 }

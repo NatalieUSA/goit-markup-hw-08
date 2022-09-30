@@ -22,7 +22,7 @@
   </head>
   <body class="page">
     <!--HEADER - Шапка сайта-->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="main-nav">
           <a class="logo header__logo" href="./index.html" lang="en"
@@ -64,7 +64,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main class="main-portfolio">
       <section class="portfolio section">
@@ -87,13 +87,68 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-1.jpg"
-                    alt="Зображення веб-сайту на моніторі ноутбука"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-1_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-1_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-1_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-1_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-1_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-1_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-1_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-1_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-1_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-1_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-1_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-1_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-1_m-@1x.jpg"
+                     alt="Зображення веб-сайту на моніторі ноутбука"
+           
+                     loading="lazy"
+                   />
+                 </picture>
+                  
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -115,13 +170,68 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-2.jpg"
-                    alt="Постер двох баскетбольних гравців"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-2_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-2_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-2_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-2_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-2_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-2_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-2_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-2_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-2_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-2_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-2_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-2_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-2_m-@1x.jpg"
+                     alt="Постер двох баскетбольних гравців"
+           
+                     loading="lazy"
+                   />
+                 </picture>                 
+        
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -145,13 +255,68 @@
             <li class="gallery__item">
               <a class="gallery__link" href="">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-3.jpg"
-                    alt="Дизайн початкової сторінки додатку з логотипом ресторану морепродуктів"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-3_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-3_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-3_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-3_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-3_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-3_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-3_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-3_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-3_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-3_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-3_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-3_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-3_m-@1x.jpg"
+                     alt="Дизайн початкової сторінки додатку з логотипом ресторану морепродуктів"
+           
+                     loading="lazy"
+                   />
+                 </picture>                 
+        
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -175,13 +340,67 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-4.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-4_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-4_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-4_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-4_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-4_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-4_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-4_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-4_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-4_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-4_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-4_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-4_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-4_m-@1x.jpg"
+                     alt="Навушники"
+                     loading="lazy"
+                   />
+                 </picture> 
+
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -205,13 +424,67 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-5.jpg"
-                    alt="Дві пакувальні коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-5_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-5_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-5_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-5_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-5_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-5_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-5_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-5_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-5_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-5_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-5_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-5_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-5_m-@1x.jpg"
+                     alt="Дві пакувальні коробки"
+                     loading="lazy"
+                   />
+                 </picture> 
+
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -235,13 +508,67 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-6.jpg"
-                    alt="Монітор комп'ютера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-6_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-6_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-6_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-6_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-6_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-6_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-6_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-6_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-6_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-6_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-6_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-6_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-6_m-@1x.jpg"
+                     alt="Монітор комп'ютера"
+                     loading="lazy"
+                   />
+                 </picture> 
+            
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -265,13 +592,67 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-7.jpg"
-                    alt="Глянцевий журнал в розгорнутому вигляді"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-7_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-7_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-7_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-7_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-7_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-7_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-7_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-7_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-7_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-7_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-7_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-7_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-7_m-@1x.jpg"
+                     alt="Глянцевий журнал в розгорнутому вигляді"
+                     loading="lazy"
+                   />
+                 </picture> 
+                
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -295,13 +676,67 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-8.jpg"
-                    alt="Етикетка картонна на шнурку"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-8_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-8_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-8_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-8_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-8_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-8_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-8_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-8_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-8_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-8_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-8_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-8_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-8_m-@1x.jpg"
+                     alt="Етикетка картонна на шнурку"
+                     loading="lazy"
+                   />
+                 </picture> 
+              
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -325,13 +760,67 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="gallery__thumb">
-                  <img
-                    class="img"
-                    src="./images/page-portfolio/img-9.jpg"
-                    alt="За ноутбуком працює людина"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- Desktop screen   -->
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-9_d-@1x.webp 1x,
+                       ./images/page-portfolio/project-9_d-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 1200px)"
+                     srcset="
+                       ./images/page-portfolio/project-9_d-@1x.jpg 1x,
+                       ./images/page-portfolio/project-9_d-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+   
+                   <!-- Tablet screen MD -->
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-9_t-@1x.webp 1x,
+                     ./images/page-portfolio/project-9_t-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(min-width: 768px)"
+                     srcset="
+                     ./images/page-portfolio/project-9_t-@1x.jpg 1x,
+                     ./images/page-portfolio/project-9_t-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <!-- Mobile screen SM-->
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-9_m-@1x.webp 1x,
+                     ./images/page-portfolio/project-9_m-@2x.webp 2x
+                     "
+                     type="image/webp"
+                   />
+                   <source
+                     media="(max-width: 767px)"
+                     srcset="
+                     ./images/page-portfolio/project-9_m-@1x.jpg 1x,
+                     ./images/page-portfolio/project-9_m-@2x.jpg 2x
+                     "
+                     type="image/jpg"
+                   />
+                   <img
+                     class="gallery__img img"
+                     src="./images/page-portfolio/project-9_m-@1x.jpg"
+                     alt="За ноутбуком працює людина"
+                     loading="lazy"
+                   />
+                 </picture> 
+
                   <div class="gallery__overlay">
                     <p class="gallery__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -356,7 +845,7 @@
     </main>
 
     <!--FOOTER-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container container">
         <div class="footer-group">
           <a href="/" class="logo footer__logo" lang="en"
@@ -472,6 +961,6 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
