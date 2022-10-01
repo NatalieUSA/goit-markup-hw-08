@@ -420,6 +420,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .main-nav {
@@ -567,7 +568,7 @@ img {
   margin-right: 93px;
   padding: 24px 0;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .header__logo {
     padding: 16px 0;
     margin-left: 15px;
@@ -667,6 +668,41 @@ img {
           transform: translateX(0);
 }
 
+.mobile-nav {
+  margin-bottom: auto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-nav__link {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--accent-cl);
+}
+
+.mobile-auth__link-phone {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--accent-cl);
+}
+.mobile-auth__link-mail {
+  display: inline-block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(-main-txt-cl);
+}
+
 .mobile-socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,38 +710,8 @@ img {
   color: var(--accent-cl);
   font-weight: 500;
   font-size: 18px;
-  line-height: 3.5294117647;
+  line-height: 1.2222222222;
   letter-spacing: 0.02em;
-}
-
-.mobile-nav {
-  margin-bottom: auto;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 2;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-.mobile-nav__link {
-  margin: 32px;
-}
-.mobile-nav__link:hover, .mobile-nav__link:focus {
-  color: var(--accent-cl);
-}
-
-.mobile-auth__link-phone {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 2.3529411765;
-  letter-spacing: 0.02em;
-  color: var(--accent-cl);
-}
-.mobile-auth__link-mail {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.02em;
-  color: var(-main-txt-cl);
 }
 
 .hero {
@@ -1219,24 +1225,57 @@ img {
 
 .footer {
   background-color: var(--footer-bcg-cl);
-  padding: 60px 0;
+  padding: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: left;
+    margin-right: auto;
+  }
 }
 
-.footer-group {
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    margin-right: auto;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-group {
+    margin-right: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-bottom: 20px;
+  }
+}
 .contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .contacts__link {
   color: var(--light-cl);
@@ -1253,13 +1292,13 @@ img {
   color: var(--footer-link-cl);
 }
 
-.join {
-  margin-right: auto;
+@media screen and (max-width: 767px) {
+  .join {
+    margin-bottom: 20px;
+  }
 }
 .join__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   color: var(--light-cl);
   font-weight: 700;
   font-size: 14px;
@@ -1268,11 +1307,28 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .join__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .join__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
+}
+@media screen and (max-width: 479px) {
+  .join__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .join__icon {
   fill: var(--light-cl);
@@ -1292,9 +1348,7 @@ img {
 }
 
 .subscribe__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   color: var(--light-cl);
   font-weight: 700;
   font-size: 14px;
@@ -1303,22 +1357,38 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .subscribe-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
-.subscribe-form__field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 12px;
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 12px;
+  }
 }
 
 .subscribe-form__input {
   height: 50px;
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: var(--box-shadow-button);
@@ -1330,6 +1400,16 @@ img {
   color: var(--light-cl);
   -webkit-transition: border-color var(--duration) var(--timing-function);
   transition: border-color var(--duration) var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+  }
 }
 .subscribe-form__input:hover, .subscribe-form__input:focus {
   border-color: var(--accent-cl);
@@ -1386,6 +1466,8 @@ img {
 }
 
 .subscribe-form__btn {
+  margin-right: auto;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
