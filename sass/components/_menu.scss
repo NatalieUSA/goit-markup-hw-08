@@ -121,6 +121,10 @@
     letter-spacing: 0.02em;
 
     color: var(--accent-cl);
+
+    @media screen and (max-width: 379px) {
+      font-size: 24px;
+    }
   }
 
   &__link-mail {
@@ -137,10 +141,24 @@
 .mobile-socials {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
 
   color: var(--accent-cl);
   font-weight: 500;
   font-size: 18px;
   line-height: (22 / 18);
   letter-spacing: 0.02em;
+
+  &__link {padding: 0 10px;
+    &--line {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }}
+    
+    // &:not(:last-child) {
+      
+    //   padding: 0 10px;
+    //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+     
+    // }
+  
 }

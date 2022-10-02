@@ -1,5 +1,6 @@
 .socials {
   @extend %list;
+ 
   
   display: flex;
   justify-content: center;
@@ -9,7 +10,7 @@
 .socials__link {
   @extend %link;
   @extend %flex;
-
+  
   width: 44px;
   height: 44px;
 

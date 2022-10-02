@@ -860,97 +860,99 @@
     <!--FOOTER-->
     <footer class="footer">
       <div class="footer-container container">
-        <div class="footer-group">
-          <a href="/" class="logo footer__logo" lang="en"
-            >Web<span class="logo--light-theme">Studio</span></a
-          >
+        <div class="footer-wrap">
+          <div class="footer-group">
+            <a href="/" class="logo footer__logo" lang="en"
+              >Web<span class="logo--light-theme">Studio</span></a
+            >
 
-          <address class="contacts">
-            <ul class="contacts__list">
-              <li class="contacts__item">
+            <address class="contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="https://goo.gl/maps/wsndduZ66pt86pKw6"
+                    target="_blank"
+                    rel="noopener norefferer nofollow"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--transparent"
+                    href="mailto:info@devstudio.com"
+                    target="_blank"
+                    rel="noopener norefferer nofollow"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--transparent"
+                    href="tel:+380961111111"
+                    target="_blank"
+                    rel="noopener norefferer nofollow"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join">
+            <strong class="join__title">Приєднуйтесь</strong>
+            <ul class="join__list">
+              <li class="join__item">
                 <a
-                  class="contacts__link"
-                  href="https://goo.gl/maps/wsndduZ66pt86pKw6"
+                  class="join__link"
+                  href="https://instagram.com"
+                  aria-label="Instagram"
                   target="_blank"
-                  rel="noopener norefferer nofollow"
+                  rel="noopener noferrer"
                 >
-                  м. Київ, пр-т Лесі Українки, 26
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="contacts__item">
+
+              <li class="join__item">
                 <a
-                  class="contacts__link contacts__link--transparent"
-                  href="mailto:info@devstudio.com"
+                  class="join__link"
+                  href="https://twitter.com"
+                  aria-label="Twitter"
                   target="_blank"
-                  rel="noopener norefferer nofollow"
-                  >info@devstudio.com</a
-                >
+                  rel="noopener noferrer"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contacts__item">
+              <li class="join__item">
                 <a
-                  class="contacts__link contacts__link--transparent"
-                  href="tel:+380961111111"
+                  class="join__link"
+                  href="https://facebook.com"
+                  aria-label="Facebook"
                   target="_blank"
-                  rel="noopener norefferer nofollow"
-                  >+38 096 111 11 11</a
-                >
+                  rel="noopener noferrer"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="join__item">
+                <a
+                  class="join__link"
+                  href="https://linkedin.com"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noferrer"
+                  ><svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="join">
-          <strong class="join__title">Приєднуйтесь</strong>
-          <ul class="join__list">
-            <li class="join__item">
-              <a
-                class="join__link"
-                href="https://instagram.com"
-                aria-label="Instagram"
-                target="_blank"
-                rel="noopener noferrer"
-              >
-                <svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="join__item">
-              <a
-                class="join__link"
-                href="https://twitter.com"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noferrer"
-                ><svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__item">
-              <a
-                class="join__link"
-                href="https://facebook.com"
-                aria-label="Facebook"
-                target="_blank"
-                rel="noopener noferrer"
-                ><svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="join__item">
-              <a
-                class="join__link"
-                href="https://linkedin.com"
-                aria-label="LinkedIn"
-                target="_blank"
-                rel="noopener noferrer"
-                ><svg class="join__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="subscribe">
@@ -965,7 +967,7 @@
                 required
               />
             </label>
-            <button class="subscribe-form__btn button" type="submit">
+            <button class="subscribe-form__btn" type="submit">
               <span class="subscribe-form__btn-name">Відправити</span>
               <svg class="subscribe-form__btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
@@ -975,7 +977,7 @@
         </div>
       </div>
     </footer>
-
+    
      <!-- mobile menu -->
      <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">

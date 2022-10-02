@@ -13,7 +13,8 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      margin: -15px;
+      flex-direction: null;
+      gap: 30px;
     }
   }
 
@@ -31,14 +32,14 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: calc((100% - 2 * 30px) / 2);
-      margin: 15px;
+      width: calc((100% - 1 * 30px) / 2);
+      // margin: 15px;
     }
 
     @media screen and (min-width: 1200px) {
       // width: 270px;
-      width: calc((100% - 4 * 30px) / 4);
-      margin: 15px;
+      width: calc((100% - 3 * 30px) / 4);
+   
     }
   }
 
@@ -65,3 +66,4 @@
 .team__img {
   width: 100%;
 }
+

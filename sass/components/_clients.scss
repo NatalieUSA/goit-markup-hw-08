@@ -4,46 +4,35 @@
   @media screen and (min-width: 1200px) {
     @include section(94px);
   }
-
-  // margin: -15px;
-
   &__list {
     @extend %list;
+
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: null;
     gap: 30px;
   }
 }
+.clients__item {
+  flex-basis: calc((100% - 1 * 30px) / 2);
 
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
 
-
-.clients__icon {
-  color: currentColor;
-
-  transition: fill var(--duration) var(--timing-function);
-
-  .clients__link:hover &,
-  .clients__link:focus & {
-    fill: var(--accent-cl);
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 5 * 30px) / 6);
   }
 }
 
 .clients__link {
   @extend %link;
-
   display: flex;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  width: 210px;
   height: 92px;
 
-  // width: calc((100% - 2 * 30px) / 2);
-  // margin: 15px;
-  
- 
-  
   background-color: var(--light-cl);
   border: 1px solid var(--icon-cl);
   border-radius: var(--border-radius-button);
@@ -55,13 +44,15 @@
   &:focus {
     border-color: var(--btn-hover-cl);
   }
+}
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-   
-  }
-  @media screen and (min-width: 1200px) {
-    width: 170px;
-  
+.clients__icon {
+  color: currentColor;
+
+  transition: fill var(--duration) var(--timing-function);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--accent-cl);
   }
 }
