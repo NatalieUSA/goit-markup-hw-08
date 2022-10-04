@@ -105,13 +105,6 @@
     display: inline-block;
     margin-bottom: 32px;
 
-    transition: color var(--duration) var(--timing-function);
-
-    &:hover,
-    &:focus {
-      color: var(--accent-cl);
-    }
-
     &--current {
       color: var(--accent-cl);
     }
@@ -144,12 +137,10 @@
     color: var(-main-txt-cl);
 
     transition: color var(--duration) var(--timing-function);
-
-    
-    &__link-mail:hover,
-    &__link-mail:focus {
-      color: var(--accent-cl);
-    }
+  }
+  &__link-mail:hover,
+  &__link-mail:focus {
+    color: var(--accent-cl);
   }
 }
 

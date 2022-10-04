@@ -723,11 +723,6 @@ img {
 .mobile-nav__link {
   display: inline-block;
   margin-bottom: 32px;
-  -webkit-transition: color var(--duration) var(--timing-function);
-  transition: color var(--duration) var(--timing-function);
-}
-.mobile-nav__link:hover, .mobile-nav__link:focus {
-  color: var(--accent-cl);
 }
 .mobile-nav__link--current {
   color: var(--accent-cl);
@@ -758,7 +753,7 @@ img {
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
 }
-.mobile-auth__link-mail__link-mail:hover, .mobile-auth__link-mail__link-mail:focus {
+.mobile-auth__link-mail:hover, .mobile-auth__link-mail:focus {
   color: var(--accent-cl);
 }
 
@@ -1838,6 +1833,7 @@ img {
 
 .register-form__icons {
   margin-right: 9px;
+  min-width: 14px;
 }
 
 .register-form__icons--checked {
@@ -1879,7 +1875,7 @@ img {
 }
 @media screen and (max-width: 380px) {
   .register-form__desc {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 1199px) {

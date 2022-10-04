@@ -115,8 +115,7 @@
 
 .register-form__icons {
   margin-right: 9px;
-
-
+  min-width: 14px;
 }
 
 .register-form__icons--checked {
@@ -155,9 +154,8 @@
     color: var(--main-txt-cl);
     user-select: none;
 
-
     @media screen and (max-width: 380px) {
-      font-size: 7px;
+      font-size: 10px;
     }
     @media screen and (max-width: 1199px) {
       font-size: 12px;
