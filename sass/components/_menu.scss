@@ -1,5 +1,4 @@
-.btn-menu,
- {
+.btn-menu {
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -20,6 +19,8 @@
 
   cursor: pointer;
 
+  transition: fill var(--duration) var(--timing-function);
+
   &:hover,
   &:focus {
     fill: var(--accent-cl);
@@ -27,29 +28,31 @@
 }
 
 .menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    margin-left: auto;
-  
-    background-color: transparent;
-    border: none;
-  
-    cursor: pointer;
-  
-    &:hover,
-    &:focus {
-      fill: var(--accent-cl);
-    }
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  transition: fill var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-cl);
   }
+}
 
 .menu-container {
   @media screen and (min-width: 768px) {
@@ -77,7 +80,6 @@
   }
 }
 
-
 .mobile-nav,
 .mobile-auth,
 .mobile-menu {
@@ -89,7 +91,6 @@
   @extend %link;
 }
 
-
 .mobile-nav {
   margin-bottom: auto;
 
@@ -99,13 +100,19 @@
   letter-spacing: 0.02em;
 
   color: #212121;
- 
+
   &__link {
     display: inline-block;
     margin-bottom: 32px;
 
+    transition: color var(--duration) var(--timing-function);
+
     &:hover,
     &:focus {
+      color: var(--accent-cl);
+    }
+
+    &--current {
       color: var(--accent-cl);
     }
   }
@@ -135,6 +142,14 @@
     line-height: calc(28 / 24);
     letter-spacing: 0.02em;
     color: var(-main-txt-cl);
+
+    transition: color var(--duration) var(--timing-function);
+
+    
+    &__link-mail:hover,
+    &__link-mail:focus {
+      color: var(--accent-cl);
+    }
   }
 }
 
@@ -149,16 +164,10 @@
   line-height: (22 / 18);
   letter-spacing: 0.02em;
 
-  &__link {padding: 0 10px;
+  &__link {
+    padding: 0 10px;
     &--line {
       border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }}
-    
-    // &:not(:last-child) {
-      
-    //   padding: 0 10px;
-    //   border-right: 1px solid rgba(33, 33, 33, 0.2);
-     
-    // }
-  
+    }
+  }
 }

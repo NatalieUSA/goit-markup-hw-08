@@ -77,8 +77,12 @@
   width: 100%;
   height: 100%;
   background-color: var(--hover-overlay-cl);
+  
+  @media screen and (max-width: 479px) {
+    overflow-y: scroll;
+  }
 
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform var(--duration) var(--timing-function);
 
   .gallery__link:hover &,

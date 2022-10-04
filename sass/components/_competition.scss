@@ -1,11 +1,5 @@
 .competition {
-  @include section;
-
-  @media screen and (min-width: 1200px) {
-    @include section(94px);
-  }
-
-  padding-top: 0;
+padding-bottom: 94px;
 
   @media screen and (max-width: 1199px) {
     display: none;

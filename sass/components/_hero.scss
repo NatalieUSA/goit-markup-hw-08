@@ -1,17 +1,9 @@
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .box {
-//     background-image: url('photo@2x.png');
-//   }
-
 .hero {
   text-align: center;
   padding: 118px 0;
   margin: 0 auto;
   height: 400px;
   max-width: 1600px;
- 
 
   background-color: var(--hero-bcg-cl);
   background-image: linear-gradient(
@@ -27,29 +19,50 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/hero/img_sm-@2x.jpg);
+    background-image: linear-gradient(
+      to right,
+      var(--hero-overlay-cl),
+      var(--hero-overlay-cl)
+    ), url(../images/hero/img_sm-@2x.jpg);
   }
   // tablet
   @media screen and (min-width: 481px) {
-    background-image: url(../images/hero/img_md-@1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        var(--hero-overlay-cl),
+        var(--hero-overlay-cl)
+      ),
+      url(../images/hero/img_md-@1x.jpg);
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/hero/img_md-@2x.jpg);
-  }
-  }
-
-  // desctop 
-    @media screen and (min-width: 769px) {
-      height: 400px;
-      padding: 118px 0;
-      background-image: url(../images/hero/img_lg-@1x.jpg);
-      @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/hero/img_lg-@2x.jpg);
+      background-image: linear-gradient(
+        to right,
+        var(--hero-overlay-cl),
+        var(--hero-overlay-cl)
+      ), url(../images/hero/img_md-@2x.jpg);
     }
+  }
+
+  // desctop
+  @media screen and (min-width: 769px) {
+    height: 400px;
+    padding: 118px 0;
+    background-image: linear-gradient(
+      to right,
+      var(--hero-overlay-cl),
+      var(--hero-overlay-cl)
+    ), url(../images/hero/img_lg-@1x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to right,
+        var(--hero-overlay-cl),
+        var(--hero-overlay-cl)
+      ), url(../images/hero/img_lg-@2x.jpg);
     }
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
